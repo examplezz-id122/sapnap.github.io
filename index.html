@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> X -- Developer Portfolio </title>
+    <link rel="shortcut icon" type="x-icon" href="css.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: rgb(8, 8, 40);
+            font-family: 'Poppins', sans-serif;
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgba(6, 6, 101, 0.323);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(170, 107, 228);
+            cursor: pointer;
+            font-size: 1.09rem;
+        }
+
+
+
+        .left {
+            font-size: 1.6rem;
+            font-weight: 400;
+            cursor: pointer;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 100px 0;
+        }
+
+
+        .firstsection>div {
+            width: 30%;
+            margin: 50px 0;
+
+
+        }
+
+        .leftsection {
+            font-size: 2.3rem;
+            font-weight: 600;
+        }
+
+        #element {
+            color: rgb(170, 107, 228);
+        }
+
+        .rightsection img {
+            width: 100%;
+
+        }
+
+        .purple {
+            color: rgb(170, 107, 228);
+        }
+
+        .second-section {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+
+
+        }
+
+        .second-section>h1 {
+            font-size: 1.9rem;
+
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        .second-section .box {
+            background-color: white;
+            margin: 54px 0;
+            height: 2px;
+            width: 77vw;
+            display: flex;
+        }
+
+        .second-section .vertical {
+            height: 96px;
+            width: 1px;
+            background-color: white;
+            margin: 0 92px;
+
+        }
+
+        main hr {
+            margin: 40px 84px;
+            border: 0;
+            background: rgb(159, 101, 213);
+            height: 1.2px;
+        }
+
+        .vertical>img {
+            width: 23px;
+            position: relative;
+            top: -39px;
+            left: -19px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 70px;
+            width: 150px;
+
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 80px;
+            color: gray;
+            width: 120px;
+            font-size: 9px;
+        }
+
+        .footer-code {
+            height: 326px;
+            background-color: rgb(0, 0, 0);
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 100px;
+        }
+
+        .footer-left .bro h2 {
+            position: relative;
+        }
+
+        .footer-left .bro h2::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 3px;
+            width: 0%;
+            background-color: rgb(181, 90, 203);
+            transition: all ease 2s;
+        }
+
+        .footer-left .bro h2:hover::after {
+            width: 100%;
+        }
+
+        .footer-center h5 {
+            position: relative;
+            padding-bottom: 13px;
+        }
+
+        .footer-center h5::after {
+            content: "";
+            top: 21px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 3px;
+            width: 0%;
+            background-color: rgb(173, 80, 190);
+            transition: 1s;
+        }
+
+        .footer-center h5:hover::after {
+            width: 100%;
+        }
+
+        .footer-center>a {
+            text-decoration: none;
+            color: white;
+            margin-left: 6px;
+            cursor: pointer;
+
+        }
+
+        .footer-center>a:hover {
+            color: rgb(170, 107, 228);
+            transition: -1.2s;
+            font-size: 1.09rem;
+        }
+
+        .bro>h5 {
+            justify-content: right;
+            display: flex;
+            font-weight: bold;
+            margin-top: -0.8px;
+            color: red;
+            cursor: pointer;
+        }
+
+        .broo>h6 {
+            color: gray;
+            cursor: pointer;
+        }
+
+        .broo>h6:hover {
+            font-size: 1.00rem;
+            color: rgb(170, 107, 228);
+        }
+
+        .footer-right>h3 {
+            position: relative;
+            margin-bottom: 10px;
+            padding-bottom: 3px;
+        }
+
+        .footer-right>h3::after {
+            content: "";
+            position: absolute;
+            width: 0%;
+            left: 0;
+            bottom: 0;
+            background-color: rgb(178, 72, 213);
+            height: 3px;
+            transition: all ease 2s;
+        }
+
+        .footer-right>h3:hover::after {
+            width: 70%;
+        }
+
+        .footer-right .by>input {
+            background-color: transparent;
+            height: 19px;
+            color: white;
+            border-radius: 30px;
+            border: 2px solid rgb(164, 101, 248);
+            padding: 4px 11px;
+            outline-color: white;
+
+
+        }
+
+        .v input {
+            height: 23px;
+            margin-top: 5px;
+            background-color: transparent;
+            border-radius: 30px;
+            padding: 3px 11px;
+            border: 2px solid rgb(164, 101, 248);
+            color: white;
+            outline-color: white;
+        }
+
+        .v textarea {
+            background-color: transparent;
+            border-radius: 9px;
+            border: 2px solid rgb(164, 101, 248);
+            margin-top: 5px;
+            color: white;
+            padding: 4px 9px;
+            outline-color: white;
+        }
+
+        .v hr {
+            margin: 10px 0;
+        }
+
+        .v button {
+            width: 100%;
+            padding: 8px 0;
+            border-radius: 30px;
+            color: black;
+            font-size: medium;
+            font-weight: 500;
+        }
+
+        .v button:hover {
+            color: rgb(101, 0, 141);
+            cursor: pointer;
+        }
+
+
+        .footer-copy {
+            background-color: rgb(29, 28, 28);
+            height: 4vh;
+            width: 100%;
+        }
+
+        .footer-copy h5 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 2px;
+            padding: 6px 0;
+            font-weight: lighter;
+        }
+
+        .roj {
+            display: flex;
+
+        }
+
+        .rr {
+            background-color: rgb(173, 105, 246);
+            border-radius: 30PX;
+            margin-right: 5px;
+            height: 25px;
+            font-weight: 600;
+            font-size: large;
+            padding: 3px 4px;
+            position: relative;
+            top: -4px;
+        }
+
+        .jj {
+            background-color: rgb(173, 105, 246);
+            border-radius: 30PX;
+            /* margin-right: 2px; */
+            height: 25px;
+            font-weight: 600;
+            font-size: large;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            position: relative;
+            top: -4px;
+        }
+
+        .rr:hover {
+            background: black;
+            font-size: 1.1rem;
+        }
+
+        .jj:hover {
+            background: black;
+            font-size: 1.1rem;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                X Portfolio
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Project</a></li>
+                    <li><a href="#">Contact Me</a></li>
+                    <span class="roj">
+                        <div class="rr">
+                            <li><a href="login.html">Login</a></li>
+                        </div>
+                        <div class="jj">
+                            <li><a href="register.html">Sign up</a></li>
+                        </div>
+                    </span>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, My Name Is <span class="purple">Sapnap</span>
+                <div>And I am a passionate</div>
+                <span id="element"></span>
+
+            </div>
+            <div class="rightsection">
+                <img src="bot.png" alt="">
+            </div>
+
+        </section>
+
+        <hr>
+
+        <section class="second-section">
+            <span class="text-gray">What I have done so far</span>
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image" src="HTML 5.png" alt="HTML" style="height: 30px; width: 39px;">
+                    <div class="vertical-title">
+                        HTML Developer (2023-2024)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eius laboriosam illo quae
+                        neque nihil aperiam minus nulla veritatis officiis? Perspiciatis iusto quaerat autem!
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image" src="css.png" alt="CSS" style="height: 30px; width: 34px;">
+                    <div class="vertical-title">
+                        CSS Developer (2023-2024)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eius laboriosam illo quae
+                        neque nihil aperiam minus nulla veritatis officiis? Perspiciatis iusto quaerat autem!
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image" src="javascript.png" alt="JAVA-SCRIPT" style="height: 30px; width: 24px;">
+                    <div class="vertical-title">
+                        JAVASCRIPT Developer (2022-2024)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eius laboriosam illo quae
+                        neque nihil aperiam minus nulla veritatis officiis? Perspiciatis iusto quaerat autem!
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image" src="node-js-logo.png" alt="NOTE-JS">
+                    <div class="vertical-title">
+                        NOTE.JS Developer (2021-2023)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eius laboriosam illo quae
+                        neque nihil aperiam minus nulla veritatis officiis? Perspiciatis iusto quaerat autem!
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image" src="programmer.webp" alt="Developer">
+                    <div class="vertical-title">
+                        Front-End Developer (2024-2025)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eius laboriosam illo quae
+                        neque nihil aperiam minus nulla veritatis officiis? Perspiciatis iusto quaerat autem!
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image" src="programmer.webp" alt="Python">
+                    <div class="vertical-title">
+                        Python Developer (2024-2025)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eius laboriosam illo quae
+                        neque nihil aperiam minus nulla veritatis officiis? Perspiciatis iusto quaerat autem!
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-code">
+            <div class="footer-left">
+                <div class="bro">
+                    <h2>X Developer Portfolio</h2>
+                    <h5>-Keep learning</h5>
+                </div>
+                <div class="broo">
+                    <br>
+                    <h6><i class="fa-sharp fa-regular fa-envelope"></i>
+                        codewithsapnap@gmail.com
+                    </h6>
+                </div>
+
+            </div>
+            <div class="footer-center">
+                <h5>Stay Connected</h5>
+
+                <i class="fa-brands fa-facebook"></i><a href="https://www.facebook.com/" target="_blank">facebook</a>
+                <br>
+                <i class="fa-brands fa-youtube"></i><a href="https://youtu.be/OQzmyEt8yk0?si=68l1sO4tF6zd33tS"
+                    target="_blank">Youtube</a><br>
+
+                <i class="fa-brands fa-instagram"></i><a
+                    href="https://instagram.com/cll_me_raj2006?utm_source=qr&igshid=MzNlNGNkZWQ4Mg=="
+                    target="_blank">Instagram</a>
+
+            </div>
+            <div class="footer-right">
+                <h3>Or Leave a Message Here</h3>
+                <form action="">
+                    <div class="h">
+                        <span class="by">
+                            <input type="text" name="u" placeholder="Full Name" required>
+                            <input type="email" placeholder="Email*" required>
+                        </span>
+                    </div>
+                    <div class="v">
+                        <input type="text" placeholder="Subject">
+                        <br>
+                        <textarea name="code" id="hello" cols="30" rows="3" placeholder="Your Message"></textarea>
+                        <hr>
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </footer>
+    <footer class="footer-copy">
+        <h5>Copyright &#9400; 2024 CodeWithSapnap.com</h5>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Designer', 'Front-End Developer', 'Video Editor'],
+            typeSpeed: 50,
+        });
+    </script>
+
+
+</body>
+
+</html>
